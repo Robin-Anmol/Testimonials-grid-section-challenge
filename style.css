@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 81%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+#container {
+  padding: 7% 5%;
+  background-color: hsl(0, 0%, 81%);
+}
+.card-1 {
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-color: hsl(263, 55%, 52%);
+}
+.card-2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.card-3,
+.card-5 {
+  background-color: hsl(0, 0%, 100%);
+  color: #48556a;
+}
+.card-4 {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.flex-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 2px 5px 1px rgb(0, 0, 0, 0.2);
+}
+.flex-item p {
+  color: white;
+  opacity: 70%;
+}
+.header .name {
+  opacity: 100%;
+  font-size: 1rem;
+}
+.header .name-1 {
+  font-size: 1rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border: 2px solid rgb(255, 255, 255);
+}
+.item-3 img,
+.item-5 img {
+  border: 2px solid black;
+}
+.flex-item h4 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.flex-item .black-1 {
+  color: black;
+}
+.card-5 p,
+.card-3 p {
+  color: black;
+}
+.header-text :nth-child(2) {
+  opacity: 35%;
+  font-size: 0.85rem;
+}
+
+
+@media (min-width: 769px) {
+  #container,
+  #left,
+  #top,
+  #bottom {
+    display: flex;
+  }
+  #container {
+    max-width: 1440px;
+
+    padding: 5% 5%;
+    margin: 0% auto;
+  }
+  .card-5 {
+    flex-basis: 25%;
+  }
+
+  #left {
+    flex-direction: column;
+    flex-basis: 80%;
+  }
+  #left .flex-item {
+    margin-right: 15px;
+  }
+  #top,
+  #bottom {
+    flex-basis: 50%;
+  }
+
+
+  .card-1,
+  .card-4 {
+    flex-basis: 65%;
+  }
+ 
+  .card-3,
+  .card-2 {
+    flex-basis: 35%;
+  }
+
+}
